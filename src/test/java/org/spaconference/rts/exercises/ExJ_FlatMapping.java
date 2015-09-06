@@ -1,25 +1,29 @@
 package org.spaconference.rts.exercises;
 
-import org.junit.Test;
-import org.junit.runner.RunWith;
-import org.spaconference.rts.runner.ExampleRunner;
-import org.spaconference.rts.runner.ExampleRunner.Way;
-
-import java.util.ArrayList;
-import java.util.List;
-import java.util.function.IntFunction;
-import java.util.stream.Collectors;
-import java.util.stream.IntStream;
-
 import static java.util.Arrays.asList;
 import static java.util.Collections.emptyList;
 import static org.hamcrest.CoreMatchers.equalTo;
 import static org.hamcrest.MatcherAssert.assertThat;
 
+import java.util.ArrayList;
+import java.util.List;
+import java.util.function.IntFunction;
+
+import org.junit.Test;
+import org.junit.runner.RunWith;
+import org.spaconference.rts.runner.ExampleRunner;
+import org.spaconference.rts.runner.ExampleRunner.Way;
+
 
 @RunWith(ExampleRunner.class)
 public class ExJ_FlatMapping {
-    @Way
+    
+	@Way
+    public static List<Integer> newWay(int max) {
+		return null;
+    }
+	
+	@Way
     public static List<Integer> oldWay(int max) {
         List<Integer> ints = new ArrayList<>();
         for (int i = 1; i <= max; i++) {

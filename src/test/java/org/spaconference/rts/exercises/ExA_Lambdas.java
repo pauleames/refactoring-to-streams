@@ -24,9 +24,10 @@ public class ExA_Lambdas {
         };
     }
 
+    // hint: replace with a lambda expression
     @Way
     public static Function<String, Integer> lambda() {
-        return new Function<String, Integer>() {
+    	return new Function<String, Integer>() {
             @Override
             public Integer apply(String s) {
                 return Integer.parseInt(s);
@@ -34,9 +35,10 @@ public class ExA_Lambdas {
         };
     }
 
+    // hint: replace with a method reference
     @Way
     public static Function<String, Integer> methodReference() {
-        return new Function<String, Integer>() {
+    	return new Function<String, Integer>() {
             @Override
             public Integer apply(String s) {
                 return Integer.parseInt(s);

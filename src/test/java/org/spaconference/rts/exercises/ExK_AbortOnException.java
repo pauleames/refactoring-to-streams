@@ -17,6 +17,12 @@ import static org.hamcrest.MatcherAssert.assertThat;
 @RunWith(ExampleRunner.class)
 public class ExK_AbortOnException {
 
+	// hint: see http://stackoverflow.com/questions/27644361/how-can-i-throw-checked-exceptions-from-inside-java-8-streams
+	@Way
+    public static List<URL> new_way(List<String> strings) throws MalformedURLException {
+		return null;
+    }
+	
     @Way
     public static List<URL> old_way(List<String> strings) throws MalformedURLException {
         List<URL> uris = new ArrayList<>();

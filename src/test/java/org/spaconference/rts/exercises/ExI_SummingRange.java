@@ -1,19 +1,25 @@
 package org.spaconference.rts.exercises;
 
-import org.junit.Test;
-import org.junit.runner.RunWith;
-import org.spaconference.rts.runner.ExampleRunner;
+import static org.hamcrest.CoreMatchers.equalTo;
+import static org.hamcrest.MatcherAssert.assertThat;
 
 import java.util.function.LongUnaryOperator;
 
-import static org.hamcrest.CoreMatchers.equalTo;
-import static org.hamcrest.MatcherAssert.assertThat;
-import static org.spaconference.rts.runner.ExampleRunner.Way;
+import org.junit.Test;
+import org.junit.runner.RunWith;
+import org.spaconference.rts.runner.ExampleRunner;
+import org.spaconference.rts.runner.ExampleRunner.Way;
 
 
 @RunWith(ExampleRunner.class)
 public class ExI_SummingRange {
 
+	// hint: LongStream
+	@Way
+    public static long newWay(long limit) {
+		return 0l;
+    }
+	
     @Way
     public static long oldWay(long limit) {
         long result = 0;

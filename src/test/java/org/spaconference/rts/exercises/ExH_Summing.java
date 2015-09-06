@@ -1,19 +1,25 @@
 package org.spaconference.rts.exercises;
 
-import org.junit.Test;
-import org.junit.runner.RunWith;
-import org.spaconference.rts.runner.ExampleRunner;
+import static org.hamcrest.CoreMatchers.equalTo;
+import static org.hamcrest.MatcherAssert.assertThat;
 
 import java.util.function.ToIntFunction;
 
-import static org.hamcrest.CoreMatchers.equalTo;
-import static org.hamcrest.MatcherAssert.assertThat;
-import static org.spaconference.rts.runner.ExampleRunner.Way;
+import org.junit.Test;
+import org.junit.runner.RunWith;
+import org.spaconference.rts.runner.ExampleRunner;
+import org.spaconference.rts.runner.ExampleRunner.Way;
 
 
 @RunWith(ExampleRunner.class)
 public class ExH_Summing {
 
+	// hint: IntStream
+	@Way
+    public static int newWay(int[] ints) {
+        return 0;
+    }
+	
     @Way
     public static int oldWay(int[] ints) {
         int result = 0;

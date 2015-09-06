@@ -18,6 +18,11 @@ import static org.spaconference.rts.runner.ExampleRunner.Way;
 @RunWith(ExampleRunner.class)
 public class ExG_Finding {
 
+	@Way
+    public static String newWay(List<String> strings, Predicate<? super String> criteria) {
+        return null;
+    }
+	
     @Way
     public static String oldWay(List<String> strings, Predicate<? super String> criteria) {
         for (String string : strings) {

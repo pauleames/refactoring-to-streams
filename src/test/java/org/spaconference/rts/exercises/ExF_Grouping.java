@@ -1,17 +1,23 @@
 package org.spaconference.rts.exercises;
 
-import com.google.common.collect.ImmutableMap;
-import org.junit.Test;
-import org.junit.runner.RunWith;
-import org.spaconference.rts.runner.ExampleRunner;
-
-import java.util.*;
-import java.util.function.Function;
-
 import static java.util.Arrays.asList;
 import static org.hamcrest.CoreMatchers.equalTo;
 import static org.hamcrest.MatcherAssert.assertThat;
-import static org.spaconference.rts.runner.ExampleRunner.Way;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Map;
+import java.util.Set;
+import java.util.SortedMap;
+import java.util.TreeMap;
+import java.util.function.Function;
+
+import org.junit.Test;
+import org.junit.runner.RunWith;
+import org.spaconference.rts.runner.ExampleRunner;
+import org.spaconference.rts.runner.ExampleRunner.Way;
+
+import com.google.common.collect.ImmutableMap;
 
 
 @RunWith(ExampleRunner.class)
@@ -39,6 +45,10 @@ public class ExF_Grouping {
     public static Product yFronts = new Product("y-fronts", "pants");
     public static Product boxers = new Product("boxers", "dogs");
 
+    @Way
+    public static Map<String,List<Product>> newWay(List<Product> products) {
+        return null;
+    }    
 
     @Way
     public static Map<String,List<Product>> oldWay(List<Product> products) {

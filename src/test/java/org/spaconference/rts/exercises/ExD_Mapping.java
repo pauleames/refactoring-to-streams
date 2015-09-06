@@ -1,22 +1,27 @@
 package org.spaconference.rts.exercises;
 
-import org.junit.Test;
-import org.junit.runner.RunWith;
-import org.spaconference.rts.runner.ExampleRunner;
+import static java.util.Arrays.asList;
+import static org.hamcrest.CoreMatchers.equalTo;
+import static org.hamcrest.MatcherAssert.assertThat;
 
 import java.util.ArrayList;
 import java.util.List;
 import java.util.function.Function;
 
-import static java.util.Arrays.asList;
-import static org.hamcrest.CoreMatchers.equalTo;
-import static org.hamcrest.MatcherAssert.assertThat;
-import static org.spaconference.rts.runner.ExampleRunner.Way;
+import org.junit.Test;
+import org.junit.runner.RunWith;
+import org.spaconference.rts.runner.ExampleRunner;
+import org.spaconference.rts.runner.ExampleRunner.Way;
 
 
 @RunWith(ExampleRunner.class)
 public class ExD_Mapping {
 
+	@Way
+    public static List<Integer> newWay(List<String> strings) {
+        return null;
+    }
+	
     @Way
     public static List<Integer> oldWay(List<String> strings) {
         List<Integer> result = new ArrayList<>();

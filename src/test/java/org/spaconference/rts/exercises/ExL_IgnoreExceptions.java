@@ -17,6 +17,13 @@ import static org.hamcrest.MatcherAssert.assertThat;
 @RunWith(ExampleRunner.class)
 public class ExL_IgnoreExceptions {
 
+	// hint: go through all of the options in the solutions package.
+	// 		 all nasty? avoid using streams with checked exceptions?
+	@Way
+    public static List<URL> new_way(List<String> strings) {
+        return null;
+    }
+	
     @Way
     public static List<URL> old_way(List<String> strings) {
         List<URL> uris = new ArrayList<>();

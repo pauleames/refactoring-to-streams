@@ -1,24 +1,30 @@
 package org.spaconference.rts.exercises;
 
-import org.junit.Test;
-import org.junit.runner.RunWith;
-import org.spaconference.rts.runner.ExampleRunner;
-
-import java.io.IOException;
-import java.io.StringWriter;
-import java.io.Writer;
-
 import static java.util.Arrays.asList;
 import static org.hamcrest.CoreMatchers.equalTo;
 import static org.hamcrest.MatcherAssert.assertThat;
-import static org.spaconference.rts.runner.ExampleRunner.Way;
 
+import java.io.IOException;
+import java.io.PrintWriter;
+import java.io.StringWriter;
+import java.io.Writer;
+
+import org.junit.Test;
+import org.junit.runner.RunWith;
+import org.spaconference.rts.runner.ExampleRunner;
+import org.spaconference.rts.runner.ExampleRunner.Way;
 
 @RunWith(ExampleRunner.class)
 public class ExB_Iterating {
 
+	// hint: StreamSupport
+	@Way
+    public static void newWay(Iterable<String> things, PrintWriter writer) throws IOException {
+        
+    }
+	
     @Way
-    public static void oldWay(Iterable<String> things, Writer writer) throws IOException {
+    public static void oldWay(Iterable<String> things, PrintWriter writer) throws IOException {
         for (String thing : things) {
             writer.write(thing);
         }

@@ -1,25 +1,27 @@
 package org.spaconference.rts.exercises;
 
-import org.junit.Test;
-import org.junit.runner.RunWith;
-import org.spaconference.rts.runner.ExampleRunner;
+import static java.util.Arrays.asList;
+import static org.hamcrest.CoreMatchers.equalTo;
+import static org.hamcrest.MatcherAssert.assertThat;
 
 import java.util.ArrayList;
 import java.util.List;
 import java.util.function.IntFunction;
-import java.util.function.IntSupplier;
-import java.util.stream.IntStream;
 
-import static java.util.Arrays.asList;
-import static java.util.stream.Collectors.toList;
-import static org.hamcrest.CoreMatchers.equalTo;
-import static org.hamcrest.MatcherAssert.assertThat;
-import static org.spaconference.rts.runner.ExampleRunner.Way;
+import org.junit.Test;
+import org.junit.runner.RunWith;
+import org.spaconference.rts.runner.ExampleRunner;
+import org.spaconference.rts.runner.ExampleRunner.Way;
 
 
 @RunWith(ExampleRunner.class)
 public class ExM_Generator {
 
+	@Way
+    public static List<Integer> newWay(int count) {
+        return null;
+    }
+	
     @Way
     public static List<Integer> oldWay(int count) {
         List<Integer> result = new ArrayList<>();
@@ -33,15 +35,6 @@ public class ExM_Generator {
             result.add(t);
         }
         return result;
-    }
-
-    @Way
-    public static List<Integer> newWay(int count) {
-        return IntStream.generate(fibonacciSupplier(1, 2)).limit(count).boxed().collect(toList());
-    }
-
-    public static IntSupplier fibonacciSupplier(int initial1, int initial2) {
-        return () -> 0;
     }
 
     @Test
